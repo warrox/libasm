@@ -11,5 +11,6 @@ int main(void){
 	printf("comparaison de str1 et str2 : %d\n", ft_strcmp("Hello", "Hellow"));
 
 	printf("comparaison de str1 et str2 : %d\n", strcmp("Hello", "Hellow"));
+    ft_write(1, "Salut c'est write", ft_strlen("salut c'est write"));
 	return 0;
 }
