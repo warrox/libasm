@@ -16,8 +16,12 @@ int main(void){
     
     char buf[128];
     ft_write(1,"Enter a input to test ft_read :\t ",ft_strlen("Enter a input to test ft_read"));
-    int bytes = ft_read(0, buf, 5);
+    int bytes = ft_read(0, buf, 10);
     buf[bytes] = '\0';
     printf("Result of read : %s\n", buf);
+
+	
+	char *copy = ft_strdup("This is a string well copied\n");
+	printf("result of copy : %s", copy);
 	return 0;
 }
