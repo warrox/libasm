@@ -17,6 +17,9 @@ ft_strdup:
         inc         rdi                  ; +1 for '\0'
         call        malloc wrt ..plt
         test        rax, rax
+		neg			rax
+		mov			rdi, rax
+		mov			rax, 12
         call		__errno_location wrt ..plt
 
         mov         rdi, rax             ; dest
